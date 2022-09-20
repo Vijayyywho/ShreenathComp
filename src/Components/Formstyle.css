@@ -1,0 +1,71 @@
+label {
+  color: #fff;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  padding: 4rem 1rem;
+  margin: auto;
+  max-width: 600px;
+}
+form input,
+form textarea {
+  margin-bottom: 1rem;
+  padding: 10px 18px;
+  font-size: 1.2rem;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.1);
+  color: #f4f4f4;
+}
+.btnF {
+  border: 2px solid yellow;
+  font-size: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+  background: transparent;
+  color: #fff;
+  padding: 7px;
+  border-radius: 17px;
+  width: 25%;
+  transition: 0.4s;
+}
+.btnF:hover {
+  background-color: yellow;
+  color: #000;
+  font-weight: 600;
+}
+.sucess {
+  width: 100%;
+  position: relative;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+}
+.message .sucess h4 {
+  font-size: 25px;
+  color: green;
+  margin-top: 0px;
+}
+.message .sucess {
+  position: absolute;
+  animation: buttons 0.3s linear;
+  display: none;
+}
+.message .danger {
+  position: absolute;
+  animation: buttons 0.3s linear;
+  color: red;
+  display: none;
+}
+
+@keyframes btnF {
+  0% {
+    transform: scale(0.1);
+  }
+  50% {
+    transform: scale(0.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

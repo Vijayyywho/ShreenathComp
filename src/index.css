@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded:wght@400;700&family=Mulish:wght@600;700&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Mulish", sans-serif;
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+}
+
+h4,
+p,
+h1,
+a {
+  color: rgb(255, 252, 252);
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+.content .btn {
+  padding: 5px;
+  background: transparent;
+  color: #fff;
+  margin: 2px;
+  border: 2px solid rgb(255, 255, 255);
+  font-size: 23px;
+  border-radius: 26px;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.btn-light {
+  padding: 5px;
+  background: transparent;
+  color: #fff;
+  margin: 21px;
+  border: 2px solid yellow;
+  font-size: 23px;
+  border-radius: 26px;
+  font-weight: 500;
+}
+
+.btn-light:hover {
+  background: rgba(255, 2555, 255, 0.2);
+  color: #fff;
+  transition: 0.3s;
+}
+.btn:hover {
+  background: yellow;
+  color: rgb(0, 0, 0);
+  transition: 0.3s;
+}
+body {
+  background-color: black;
+}
+.nav-menu Li a:hover,
+.nav-menu Li a .active {
+  color: #810808;
+}
+.nav-menu Li a .active::after,
+.nav-menu Li a :hover::after {
+  content: "";
+  position: absolute;
+  background-color: #810808;
+  height: 3px;
+  width: 55%;
+  left: 12px;
+  bottom: 5px;
+}

@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded:wght@400;700&family=Mulish:wght@600;700&family=Quicksand:wght@300&family=Raleway:wght@200&display=swap");
+.service-head {
+  text-align: center;
+  padding: 4rem 0 2rem 0;
+  font-size: 4rem;
+}
+.service-container {
+  max-width: 1140px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 40px;
+  padding-bottom: 5rem;
+}
+p {
+  font-family: "Raleway", sans-serif;
+  font-weight: 300;
+  letter-spacing: 1;
+}
+.service-card {
+  background: #1a1919;
+  padding: 1.2rem 1rem;
+  border-radius: 48px;
+  transition: all 0.25s;
+  font-size: 15px;
+}
+.service-card:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+.ser-title {
+  color: #fff;
+  padding: 1rem 0;
+  text-align: center;
+  text-transform: capitalize;
+  margin: 8px;
+}
+.pro-btns {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 0;
+}
+.pro-btns .btn {
+  padding: 0.5rem 1rem;
+}
+.btn {
+  border: 2px solid yellow;
+  border-radius: 15px;
+}
+.service-details {
+  padding-bottom: 1rem;
+  font-size: 1.1rem;
+  text-align: justify;
+}
+.service-card img {
+  width: 100%;
+}
+@media screen and (max-width: 740px) {
+  .service-container {
+    max-width: 85%;
+    margin: auto;
+    grid-template-columns: 1fr;
+  }
+  .service-card {
+    background: #1a1919;
+    padding: 1.2rem 1rem;
+    border-radius: 40px;
+    transition: all 0.25s;
+  }
+  .service-card:hover {
+    transform: scale(1);
+    cursor: pointer;
+  }
+  .service-head {
+    text-align: center;
+    padding: 4rem 0 2rem 0;
+    font-size: 3rem;
+  }
+}
